@@ -43,10 +43,12 @@ import tripleExponentiallySmoothedAverage from './tripleExponentiallySmoothedAve
 import volume from './volume'
 import volumeRatio from './volumeRatio'
 import williamsR from './williamsR'
+import zigZag from './zigZag'
 
 const indicators: Record<string, IndicatorConstructor> = {}
 
 const extensions = [
+  zigZag,
   averagePrice, awesomeOscillator, bias, bollingerBands, brar,
   bullAndBearIndex, commodityChannelIndex, currentRatio, differentOfMovingAverage,
   directionalMovementIndex, easeOfMovementValue, exponentialMovingAverage, momentum,
